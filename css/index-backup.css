@@ -1,0 +1,294 @@
+::selection{
+    background: orange;
+}
+header{
+    margin-top: 0;
+}
+
+
+
+#brand-text{
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.navbar-nav{
+    margin-left: 50%;
+}
+@media screen and (max-width:992px){
+    .navbar-nav{
+        margin-left: 50px;
+    }
+}
+.challenge-icon{
+    padding-bottom: 0.1em;
+}
+
+#name{
+    font-size: 2em;
+}
+#profession{
+    font-size: 1.1em;
+    line-height:1.2em;
+}
+
+
+body{
+   padding-top: 58px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 554px){
+    #picture{
+    background-image: url("../images/code-400.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 200px;         
+
+}
+    #welcome{
+    font-size: 1.4em;
+    position: relative;
+    left: 50px;
+}
+}
+
+@media screen and (min-width: 555px){
+    #picture{
+    background-image: url("../images/code866.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 200px;         
+
+}
+    #welcome{
+    font-size: 1.7em;
+    position: relative;
+        left: 50px;
+        max-width: 400px;
+}
+}
+
+@media screen and (min-width: 1053px){
+    #picture{
+    background-image: url("../images/code.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 200px;         
+
+}
+}
+
+section { 
+    padding-top: 200px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.experience{
+	text-align: left;
+}
+
+@media screen and (max-width: 1197){
+    .challenge-w-icon{
+    padding-top: 30px;
+}
+}
+@media screen and (min-width: 1198){
+    .challenge-w-icon{
+        position: relative;
+        top: 50px;
+    
+}
+}
+@media screen and (max-width: 573px){
+.icon{
+    margin-bottom: 200px;
+    font-size: 4em;
+    }
+     img {max-width: 250px}
+    
+}
+@media screen and (min-width: 574px){
+.icon{
+    margin-bottom: 145px;
+    font-size: 2.9em;
+    }
+   
+}
+@media screen and (min-width: 768px){
+.icon{
+    margin-bottom: 200px;
+    font-size: 3.3em;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .icon
+        {
+        margin-bottom: 240px;
+        font-size: 4.5em;
+        }
+    
+    img {
+    max-width: 250px;
+        }
+
+}
+
+
+
+
+
+.contactlistitems{
+    font-size: 200%;
+}
+
+.skills{
+    text-align: center;
+}
+footer{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 400px;
+}
+.captions{
+    line-height: normal;
+}
+#TAchallanges{
+    margin-bottom: 50px;
+}
+livepjt-line{
+    margin-left: 2vw;
+    font-size: 5vw;
+}
+.livepjt-description{
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.task{
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 575px){
+.code{
+    font-size: 2em;
+    text-align: center;
+    margin-left: auto;
+    }
+}
+
+
+@media screen and (min-width: 576px){
+.code{
+    font-size: 1.3em;
+    margin-bottom: 200px;
+    }
+.code2{
+    margin-top: 38px;
+    font-size: 0.9em;
+    text-align: center;
+    }
+.code-background{
+        margin-top:20px;
+    
+    }
+    .code-div-text{
+    font-size: 0.4em;
+    margin-top: 120px;}
+    
+    .code-div{
+    text-align: center;
+    margin-bottom: 70px;
+}
+        
+}
+.code{
+    color: #343a40;
+}
+.code:hover{
+      color: #343a40;
+}
+.code:hover .code2{
+    color:  #e6e6e6;
+}
+
+@media screen and (max-width: 575px){
+.code{
+    font-size: 1.3em;
+    margin-bottom: 200px;
+    margin-left: auto;
+    }
+.code2{
+    margin-top: 50px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-left: 15px;
+    }
+.code-background{
+    margin-top:40px;
+    
+    }
+    .code-div-text{
+    font-size: 0.4em;
+    margin-top: 140px;}
+    
+    .code-div{
+    text-align: center;
+    margin-bottom: 100px;
+}
+        
+}
+
+@media screen and (min-width: 992px){
+.code{
+    font-size: 1.3em;
+    text-align: center;
+    }
+.code2{
+    margin-top: 68px;
+    font-size: 0.9em;
+    text-align: center;
+    }
+.code-background{
+        margin-top:50px;
+    }
+.code-div-text{
+    font-size: 0.4em;
+    margin-top: 150px;
+}
+.code-div{
+    text-align: center;
+}
+
+}
+i{
+    5vw;
+}
+#contact{
+    padding-top: 200px;
+}

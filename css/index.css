@@ -1,0 +1,55 @@
+/****************
+NAV
+****************/
+body{
+    padding-top: 130px;
+}
+
+#brand-text{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 2vw;
+}
+
+/*SKILL BUTTONS IN NAV*/
+@media screen and (max-width: 1152px){
+    .nav-item{
+        font-size: 20px;
+        text-align: center;
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: 1153px){
+    .nav-item{
+    font-size: 25px;
+    margin-left: auto;
+    text-align: center;
+    }
+}
+@media screen and (max-width: 991px){
+    i{
+        display: none;
+    }
+}
+
+#navbarNav{
+    padding-top: 40px;
+}
+#picture{
+     background-image: url("../images/code.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 300px;
+    margin-bottom: 270px;
+}
+
+section{
+    padding-top: 200px;
+}
