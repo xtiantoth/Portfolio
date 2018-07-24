@@ -2,10 +2,8 @@
     background: orange;
 }
 header{
-    margin-top: 0;
+    margin-top: 48px;
 }
-
-
 
 #brand-text{
     margin-left: 18px;
@@ -13,7 +11,7 @@ header{
 }
 
 .navbar-nav{
-    margin-left: 50%;
+    margin-left: 30%;
 }
 @media screen and (max-width:992px){
     .navbar-nav{
@@ -37,6 +35,50 @@ body{
    padding-top: 58px;
     font-size: 25px;
 }
+
+@media screen and (min-width: 0px){
+    #picture{
+    background-image: url("../images/code-400.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 200px;         
+
+}
+    #welcome{
+    font-size: 1.4em;
+    position: relative;
+    left: 50px;
+}
+}
+@media screen and (max-width: 480px){
+    #picture{
+    background-image: url("../images/code-400.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+        
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    height: 630px;
+    padding-top: 200px;         
+
+}
+    #welcome{
+    font-size: 1.4em;
+    position: relative;
+    left: 50px;
+}
+}
+
 
 @media screen and (max-width: 554px){
     #picture{
@@ -79,7 +121,7 @@ body{
     font-size: 1.7em;
     position: relative;
         left: 50px;
-        max-width: 400px;
+        max-width: 350px;
 }
 }
 
