@@ -1,0 +1,22 @@
+@foreach (var item in Model)
+{
+
+    @*Helper method to control pluralization used on line 20 for number of campaign reviews.*@
+    @helper pluralize(int amount, string singular, string plural)
+    {
+        @(amount == 1 ? singular : plural)
+    }
+    //Removes the statements of average rating and review count if there are none.
+    if (item.Campaign.Reviews.Count == 0)
+    {
+        <p style="display: inline;" class="itemData">
+            <img class="imgThumb itemData" src="@item.Campaign.ImageUrL" alt="@item.Campaign.Name" /> | @Html.DisplayFor(modelItem => item.Campaign.Name)  |  @{var reviewsCount = item.Campaign.Reviews.Count; @pluralize(reviewsCount, +reviewsCount + " review", +reviewsCount + " reviews") } |
+        </p>
+    }
+    else
+    {
+        <p style="display: inline;" class="itemData">
+            <img class="imgThumb itemData" src="@item.Campaign.ImageUrL" alt="@item.Campaign.Name" /> | @Html.DisplayFor(modelItem => item.Campaign.Name) | @Html.DisplayNameFor(model => model.ReviewAverage): @Html.DisplayFor(modelItem => item.ReviewAverage) |  @{var reviewsCount = item.Campaign.Reviews.Count; @pluralize(reviewsCount, +reviewsCount + " review", +reviewsCount + " reviews")
+            } |
+        </p>
+    }

@@ -1,0 +1,34 @@
+﻿<h3>See What Other Buyers Have to Say</h3>
+@foreach (var review in Model.Campaign.Reviews)
+{
+    <div>
+        <hr />
+        <ul>
+            <li>
+                @Html.DisplayFor(p => review.ApplicationUser.FirstName) | @Html.DisplayFor(p => review.ReviewDate) |
+                @for (int i = 0; i < review.ProductRating; i++)
+                {
+                    <div class="star-rating__wrap ">
+                        <span style="cursor:default" class="star-rating__ico fa fa-star fa-lg" title="@review.ProductRating out of 5 stars" value: @review.ProductRating></span>
+                    </div>
+                }
+
+                | @{
+                    var message = review.ReviewDetails;
+                    var messageLength = review.ReviewDetails.Length;
+
+                    if (messageLength > 40)
+                    {
+                        message = message.Substring(0, 40);
+                        <span>@message...</span>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(p => review.ReviewDetails);
+                    }
+                }
+            </li>
+        </ul>
+    </div>
+
+}

@@ -1,0 +1,48 @@
+//CSS belonging to the correction
+
+#reviewImage {
+    width: auto;
+    height: 150px;
+    visibility: hidden;
+    position: relative;
+    bottom: 15em;
+    left: 15em;
+}
+
+#campaignReview {
+    color: black;
+}
+
+<script>
+        $( document ).ready(function() {
+            $("li").click(function () {
+                var listElementCampaignId = ($(this).attr("id"));
+                $("#hiddenCampaignId").val(listElementCampaignId)
+                var listElementCampaignName = ($(this).find("p").text());
+                $("#campaignReview").val(listElementCampaignName)
+
+                //Making image next to review details appear START
+                var listElementCampaignImage = ($(this).find("img"));//Finds the image tag associated with the item that has been clicked on and binds it to the variable listElementCampaignName
+                var newCampImage = listElementCampaignImage.attr("src");//Gets and targets the src attibute of the variable listElementCampaignImage which is now the image due to the previous statement  
+                $("#reviewImage").attr("src", newCampImage);//Uses the id to identify the specific image tage to target and sets the src attribute to the variable established at newCampImage
+                //Making image next to review details appear END
+
+                //Makes the image element hidden until clicking on a campaign
+                document.getElementById("reviewImage").style.visibility = "visible";
+
+            });
+
+            $("#ReviewDetails").keyup(characterCount);
+            $("#ReviewDetails").keydown(characterCount);
+            $("#ReviewDetails").on('input', characterCount);
+        });
+//Disable Chrome AutoComplete feature to prevent autoFill dropdown from covering custom dropdown
+        function DisableAutoComplete() {
+            var thisInput = document.getElementById('campaignReview');
+            thisInput.setAttribute('autocomplete', 'off');
+        }
+
+        DisableAutoComplete();
+//END--Disable Chrome AutoComplete feature to prevent autoFill dropdown from covering custom dropdown
+
+    </script>
