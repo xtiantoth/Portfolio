@@ -9,7 +9,9 @@ header{
     margin-left: 18px;
     margin-top: 10px;
 }
-
+#logo{
+	margin-left: 40px;
+}
 .navbar-nav{
     margin-left: 30%;
 }
